@@ -248,7 +248,7 @@ func (a *app) handleLogin(w http.ResponseWriter, r *http.Request) {
 	var scopes []string
 
 	var authCodeURL string
-	scopes = append(scopes, "groups", "openid", "profile", "email")
+	scopes = append(scopes, "email")
 	if a.offlineAsScope {
 		scopes = append(scopes, "offline_access")
 		authCodeURL = a.oauth2Config(scopes).AuthCodeURL(exampleAppState)

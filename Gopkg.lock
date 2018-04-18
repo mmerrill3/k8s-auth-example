@@ -21,15 +21,12 @@
 
 [[projects]]
   name = "github.com/emicklei/go-restful"
-  packages = [".","log"]
+  packages = [
+    ".",
+    "log"
+  ]
   revision = "5741799b275a3c4a5a9623a993576d7545cf7b5c"
   version = "v2.4.0"
-
-[[projects]]
-  name = "github.com/fatih/structs"
-  packages = ["."]
-  revision = "a720dfa8df582c51dee1b36feabb906bde1588bd"
-  version = "v1.0"
 
 [[projects]]
   name = "github.com/ghodss/yaml"
@@ -63,7 +60,10 @@
 
 [[projects]]
   name = "github.com/gogo/protobuf"
-  packages = ["proto","sortkeys"]
+  packages = [
+    "proto",
+    "sortkeys"
+  ]
   revision = "100ba4e885062801d56799d78530b73b178a78f3"
   version = "v0.4"
 
@@ -81,12 +81,6 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/golang/snappy"
-  packages = ["."]
-  revision = "553a641470496b2327abcac10b36396bd98e45c9"
-
-[[projects]]
-  branch = "master"
   name = "github.com/google/btree"
   packages = ["."]
   revision = "316fb6d3f031ae8f4d457c6c5186b9e3ded70435"
@@ -100,44 +94,11 @@
 [[projects]]
   branch = "master"
   name = "github.com/gregjones/httpcache"
-  packages = [".","diskcache"]
+  packages = [
+    ".",
+    "diskcache"
+  ]
   revision = "c1f8028e62adb3d518b823a2f8e6a95c38bdd3aa"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/hashicorp/errwrap"
-  packages = ["."]
-  revision = "7554cd9344cec97297fa6649b055a8c98c2a1e55"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/hashicorp/go-cleanhttp"
-  packages = ["."]
-  revision = "3573b8b52aa7b37b9358d966a898feb387f62437"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/hashicorp/go-multierror"
-  packages = ["."]
-  revision = "83588e72410abfbe4df460eeb6f30841ae47d4c4"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/hashicorp/go-rootcerts"
-  packages = ["."]
-  revision = "6bb64b370b90e7ef1fa532be9e591a81c3493e00"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/hashicorp/hcl"
-  packages = [".","hcl/ast","hcl/parser","hcl/scanner","hcl/strconv","hcl/token","json/parser","json/scanner","json/token"]
-  revision = "68e816d1c783414e79bc65b3994d9ab6b0a722ab"
-
-[[projects]]
-  name = "github.com/hashicorp/vault"
-  packages = ["api","helper/compressutil","helper/jsonutil","helper/parseutil"]
-  revision = "6b29fb2b7f70ed538ee2b3c057335d706b6d4e36"
-  version = "v0.8.3"
 
 [[projects]]
   branch = "master"
@@ -172,20 +133,12 @@
 [[projects]]
   branch = "master"
   name = "github.com/mailru/easyjson"
-  packages = ["buffer","jlexer","jwriter"]
+  packages = [
+    "buffer",
+    "jlexer",
+    "jwriter"
+  ]
   revision = "2a92e673c9a6302dd05c3a691ae1f24aef46457d"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/mitchellh/go-homedir"
-  packages = ["."]
-  revision = "b8bc1bf767474819792c23f32d8286a45736f1c6"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/mitchellh/mapstructure"
-  packages = ["."]
-  revision = "d0303fe809921458f417bcf828397a65db30a7e4"
 
 [[projects]]
   branch = "master"
@@ -202,14 +155,11 @@
 [[projects]]
   branch = "master"
   name = "github.com/pquerna/cachecontrol"
-  packages = [".","cacheobject"]
+  packages = [
+    ".",
+    "cacheobject"
+  ]
   revision = "5475d973ea70916980bee28c2b674f3dc3eaed0a"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/sethgrid/pester"
-  packages = ["."]
-  revision = "0af5bab1e1ea2860c5aef8e77427bab011d774d8"
 
 [[projects]]
   branch = "master"
@@ -226,36 +176,77 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
-  packages = ["ed25519","ed25519/internal/edwards25519","ssh/terminal"]
+  packages = [
+    "ed25519",
+    "ed25519/internal/edwards25519",
+    "ssh/terminal"
+  ]
   revision = "c84b36c635ad003a10f0c755dff5685ceef18c71"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = ["context","context/ctxhttp","http2","http2/hpack","idna","lex/httplex"]
+  packages = [
+    "context",
+    "context/ctxhttp",
+    "http2",
+    "http2/hpack",
+    "idna",
+    "lex/httplex"
+  ]
   revision = "0a9397675ba34b2845f758fe3cd68828369c6517"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/oauth2"
-  packages = [".","internal"]
+  packages = [
+    ".",
+    "internal"
+  ]
   revision = "bb50c06baba3d0c76f9d125c0719093e315b5b44"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix","windows"]
+  packages = [
+    "unix",
+    "windows"
+  ]
   revision = "314a259e304ff91bd6985da2a7149bbf91237993"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/text"
-  packages = ["collate","collate/build","internal/colltab","internal/gen","internal/tag","internal/triegen","internal/ucd","language","secure/bidirule","transform","unicode/bidi","unicode/cldr","unicode/norm","unicode/rangetable","width"]
+  packages = [
+    "collate",
+    "collate/build",
+    "internal/colltab",
+    "internal/gen",
+    "internal/tag",
+    "internal/triegen",
+    "internal/ucd",
+    "language",
+    "secure/bidirule",
+    "transform",
+    "unicode/bidi",
+    "unicode/cldr",
+    "unicode/norm",
+    "unicode/rangetable",
+    "width"
+  ]
   revision = "1cbadb444a806fd9430d14ad08967ed91da4fa0a"
 
 [[projects]]
   name = "google.golang.org/appengine"
-  packages = ["internal","internal/base","internal/datastore","internal/log","internal/remote_api","internal/urlfetch","urlfetch"]
+  packages = [
+    "internal",
+    "internal/base",
+    "internal/datastore",
+    "internal/log",
+    "internal/remote_api",
+    "internal/urlfetch",
+    "urlfetch"
+  ]
   revision = "150dc57a1b433e64154302bdc40b6bb8aefa313a"
   version = "v1.0.0"
 
@@ -267,7 +258,11 @@
 
 [[projects]]
   name = "gopkg.in/square/go-jose.v2"
-  packages = [".","cipher","json"]
+  packages = [
+    ".",
+    "cipher",
+    "json"
+  ]
   revision = "f8f38de21b4dcd69d0413faf231983f5fd6634b1"
   version = "v2.1.3"
 
@@ -286,13 +281,58 @@
 [[projects]]
   branch = "master"
   name = "k8s.io/apimachinery"
-  packages = ["pkg/api/errors","pkg/api/resource","pkg/apis/meta/v1","pkg/conversion","pkg/conversion/queryparams","pkg/fields","pkg/labels","pkg/runtime","pkg/runtime/schema","pkg/runtime/serializer/json","pkg/runtime/serializer/recognizer","pkg/runtime/serializer/streaming","pkg/runtime/serializer/versioning","pkg/selection","pkg/types","pkg/util/clock","pkg/util/errors","pkg/util/framer","pkg/util/intstr","pkg/util/net","pkg/util/runtime","pkg/util/sets","pkg/util/validation","pkg/util/validation/field","pkg/util/wait","pkg/util/yaml","pkg/version","pkg/watch","third_party/forked/golang/reflect"]
+  packages = [
+    "pkg/api/errors",
+    "pkg/api/resource",
+    "pkg/apis/meta/v1",
+    "pkg/conversion",
+    "pkg/conversion/queryparams",
+    "pkg/fields",
+    "pkg/labels",
+    "pkg/runtime",
+    "pkg/runtime/schema",
+    "pkg/runtime/serializer/json",
+    "pkg/runtime/serializer/recognizer",
+    "pkg/runtime/serializer/streaming",
+    "pkg/runtime/serializer/versioning",
+    "pkg/selection",
+    "pkg/types",
+    "pkg/util/clock",
+    "pkg/util/errors",
+    "pkg/util/framer",
+    "pkg/util/intstr",
+    "pkg/util/net",
+    "pkg/util/runtime",
+    "pkg/util/sets",
+    "pkg/util/validation",
+    "pkg/util/validation/field",
+    "pkg/util/wait",
+    "pkg/util/yaml",
+    "pkg/version",
+    "pkg/watch",
+    "third_party/forked/golang/reflect"
+  ]
   revision = "3b05bbfa0a45413bfa184edbf9af617e277962fb"
 
 [[projects]]
   branch = "master"
   name = "k8s.io/client-go"
-  packages = ["pkg/version","rest","rest/watch","tools/auth","tools/clientcmd","tools/clientcmd/api","tools/clientcmd/api/latest","tools/clientcmd/api/v1","tools/metrics","transport","util/cert","util/flowcontrol","util/homedir","util/integer"]
+  packages = [
+    "pkg/version",
+    "rest",
+    "rest/watch",
+    "tools/auth",
+    "tools/clientcmd",
+    "tools/clientcmd/api",
+    "tools/clientcmd/api/latest",
+    "tools/clientcmd/api/v1",
+    "tools/metrics",
+    "transport",
+    "util/cert",
+    "util/flowcontrol",
+    "util/homedir",
+    "util/integer"
+  ]
   revision = "82aa063804cf055e16e8911250f888bc216e8b61"
 
 [[projects]]
@@ -304,6 +344,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "cd3b41ba8f565eb08214ea24e5db1be5ae05b7197a6222bdabb22eced388f544"
+  inputs-digest = "2acf11bc41ce4b60051b9e76ff460cc5f86bd6243e670b7ee794bfb8a5391552"
   solver-name = "gps-cdcl"
   solver-version = 1
